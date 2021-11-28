@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(17, 136, 191);
+  padding: 0.5rem 1rem;
+
+  & > span {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+
+  .my-weather {
+    display: flex;
+    & > div {
+      font-size: 1rem;
+      line-height: 2;
+      color: white;
+      padding: 0.5rem;
+  
+      &.error {
+        color: red;
+      }
+    }
+  
+    & .action {
+      & > i {
+        cursor: pointer;
+      }
+    }
+  }
+}

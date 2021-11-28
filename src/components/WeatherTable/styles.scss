@@ -1,0 +1,48 @@
+@import './../../mixins.scss';
+
+.weather-table {
+  display: grid;
+  grid-template-columns: auto auto auto 100px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0.5rem;
+
+  & > .row {
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0.5rem;
+
+    &.error {
+      color: red;
+    }
+  }
+
+  & > .header-row {
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+
+  & > .odd-row {
+    background-color: rgba(17, 136, 191, 0.1);
+  }
+
+  & > .actions-cell {
+    text-align: right;
+
+    button {
+      @include btn;
+      width: 2rem;
+      margin-right: 0.5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.no-data {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.5rem;
+  padding: 2rem;
+}

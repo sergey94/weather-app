@@ -1,0 +1,20 @@
+@mixin btn {
+  background-color: rgba(17, 136, 191, 0.7);
+  color: white;
+  padding: 0.5rem;
+  line-height: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 300ms;
+
+  &:disabled {
+    background-color: rgba(17, 136, 191, 0.3)
+  }
+
+  &:hover, &:active {
+    background-color: rgba(17, 136, 191, 0.9);
+  }
+}

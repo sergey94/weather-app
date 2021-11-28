@@ -1,0 +1,30 @@
+@import './../../mixins.scss';
+
+.city-form {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  padding: 0.5rem;
+
+  input {
+    flex-basis: 100%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3)
+    }
+  }
+
+  button {
+    @include btn;
+    flex-basis: 3rem;
+    flex-shrink: 0;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
